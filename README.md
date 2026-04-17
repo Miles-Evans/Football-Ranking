@@ -10,7 +10,7 @@ A loop will be run several times until the power score of every team has stabili
 * A bonus is found determined by the difference in score with the smallest being -2 (overtime game) and the highest being +3 for NFL (difference of over 24 points) and +4 for college (difference of over 31 points)
 * If both teams are valid, the determination of the gains and losses are:
   - Winner gains: minimum_value( loser score / 10.0, min_add ) + bonus
-  - min_add is set to 4.0 for college and 6.0 for NFL
+  - min_add is set to 3.0 for college and 6.0 for NFL
   - Loser loses: ( 100.0 / maximum_value( winner score / 10.0, max_loss ) ) + bonus
   - max_loss is set to 5.0 for both college and NFL
 * If one of the teams are invalid, then the determination is:
