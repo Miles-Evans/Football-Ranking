@@ -34,7 +34,7 @@
       <recent name="C:\Users\MEran\Documents\GitHub\Football-Ranking\ranking_files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.python main.py">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Football-Ranking" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,8 +79,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.python main.py" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.python main.py" />
       </list>
     </recent_temporary>
   </component>
