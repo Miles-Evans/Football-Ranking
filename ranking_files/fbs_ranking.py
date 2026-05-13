@@ -414,7 +414,7 @@ aliases = {
     "M-OH": "M-OH",
     "Massachusetts": "UMass",
     "UMass": "UMass",
-    "Massachusetts Minuteman": "Massachusetts",
+    "Massachusetts Minuteman": "UMass",
     "MASS": "UMass",
     "Kent State": "Kent State",
     "Kent State Golden Flashes": "Kent State",
@@ -684,6 +684,10 @@ def normalize_team(name):
     if fbs_aliases.get(name.lower()) is not None:
         return fbs_aliases.get(name.lower())
     return fcs_aliases.get(name.lower())
+
+
+def is_valid(name):
+    return name in valid_fbs_teams
 
 
 def rank_fbs_from_games(games, max_iterations=1000, tolerance=1e-3):
