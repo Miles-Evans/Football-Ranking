@@ -683,7 +683,9 @@ def normalize_team(name):
     """Convert a team name from alias to the correct fbs/fcs team."""
     if fbs_aliases.get(name.lower()) is not None:
         return fbs_aliases.get(name.lower())
-    return fcs_aliases.get(name.lower())
+    if fcs_aliases.get(name.lower()) is not None:
+        return fcs_aliases.get(name.lower())
+    return name
 
 
 def is_valid(name):
